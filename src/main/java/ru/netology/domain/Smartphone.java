@@ -12,8 +12,8 @@ public class Smartphone extends Product{
         super();
     }
 
-    public Smartphone(int id, String name, String manufacturer) {
-        super(id, name);
+    public Smartphone(int id, String name, int price, String manufacturer) {
+        super(id, name, price);
         this.manufacturer = manufacturer;
     }
 }

@@ -22,7 +22,7 @@ public class ProductManager {
         for (int i = 0; i < items.length; i++) {
             if (matches(items[i], text)) {
                 Product[] tmp = new Product[findProduct.length + 1];
-                System.arraycopy(findProduct, 0, tmp,0, findProduct.length);
+                System.arraycopy(findProduct, 0, tmp, 0, findProduct.length);
                 tmp[tmp.length - 1] = items[i];
                 findProduct = tmp;
             }
@@ -49,7 +49,7 @@ public class ProductManager {
             if (smartphone.getManufacturer().equalsIgnoreCase(search)) {
                 return true;
             }
-            return false;
+
         }
         return false;
     }
